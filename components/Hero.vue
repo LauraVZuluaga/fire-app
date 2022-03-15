@@ -17,12 +17,16 @@
 </template>
 
 <script>
-export default {}
+import { mapState } from "vuex"
+export default {
+  computed: {
+    ...mapState([])
+  }
+}
 </script>
 
 <style scoped>
 .hero {
-  height: 50vh;
   position: relative;
   display: flex;
   padding: 5rem 0;
