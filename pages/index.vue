@@ -3,13 +3,13 @@
     <div class="container">
       <Hero />
       <LargeCardDisplay
-        v-for="cardInfo in largeCardInfo"
-        :key="cardInfo.id"
+        v-for="(cardInfo, i) in largeCardInfo"
+        :key="i.id"
         :cardsSection="cardInfo"
       />
       <SmallCardDisplay
-        v-for="smallInfo in smallCardInfo"
-        :key="smallInfo.id"
+        v-for="(smallInfo, i) in smallCardInfo"
+        :key="i.id"
         :smallCardSections="smallInfo"
       />
     </div>
